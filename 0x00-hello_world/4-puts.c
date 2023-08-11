@@ -1,13 +1,11 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
  * main - this is the main function
  *
- * Return: always 0
+ * Return: 0 (Success)
  */
-
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle);
-return (0);	     
-}     
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
