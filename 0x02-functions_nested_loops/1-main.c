@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- *
+ * print_alphabet - lowercase
  * Return: Always 0.
  */
 int main(void)
