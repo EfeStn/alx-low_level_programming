@@ -10,24 +10,24 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    unsigned int i;
+	unsigned int i;
 
-    for (i = 0; i < n; i++)
-    {
-        dest[i] = src[i];
-    }
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
 
-    return dest;
+	return (dest);
 }
 
 int main(void)
 {
-    char src[] = "Hello, world!";
-    char dest[15];
+	char src[] = "Hello, world!";
+	char dest[15];
 
-    _memcpy(dest, src, 15);
+	_memcpy(dest, src, 15);
 
-    printf("Copied string: %s\n", dest);
+	printf("Copied string: %s\n", dest);
 
-    return 0;
+	return (0);
 }
