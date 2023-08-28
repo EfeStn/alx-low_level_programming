@@ -17,7 +17,7 @@ char *_senset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return s;
+	return (s);
 }
 
 int main(void)
@@ -28,5 +28,5 @@ int main(void)
 	_senset(str, 'A', 5);
 	printf("After _senset(): %s\n", str);
 
-	return 0;
+	return (0);
 }
