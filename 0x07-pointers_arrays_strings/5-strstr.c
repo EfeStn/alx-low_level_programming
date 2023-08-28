@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * _strstr - Finds the first occurrence of a substring in a string
