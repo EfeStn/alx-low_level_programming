@@ -10,23 +10,12 @@
  */
 char *_senset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; i < n; i++)
+	for (; n > 0; i++)
 	{
 		s[i] = b;
+		n--;
 	}
-
 	return (s);
-}
-
-int main(void)
-{
-	char str[10] = "Hello";
-
-	printf("Before _senset(): %s\n", str);
-	_senset(str, 'A', 5);
-	printf("After _senset(): %s\n", str);
-
-	return (0);
 }
