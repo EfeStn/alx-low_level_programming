@@ -10,7 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *dream;
+	char *string;
 	int i, ct;
 
 	if (s1 == 0)
@@ -23,22 +23,22 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[ct] != '\0')
 		ct++;
-	dream = malloc(sizeof(char) * (i + ct + 1));
+	string = malloc(sizeof(char) * (i + ct + 1));
 
-	if (dream == 0)
+	if (string == 0)
 		return (0);
 	i = ct = 0;
 	while (s1[i] != '\0')
 	{
-		dream[i] = s1[i];
+		string[i] = s1[i];
 		i++;
 	}
 
 	while (s2[ct] != '\0')
 	{
-		dream[i] = s2[ct];
+		string[i] = s2[ct];
 		i++, ct++;
 	}
-	dream[i] = '\0';
-	return (dream);
+	string[i] = '\0';
+	return (string);
 }
