@@ -31,12 +31,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
+		return (0);
 
 	ptr = malloc(size * nmemb);
 
-	if (ptr == NULL)
-		return (NULL);
+	if (ptr == 0)
+		return (0);
 
 	_memset(ptr, 0, nmemb * size);
 
