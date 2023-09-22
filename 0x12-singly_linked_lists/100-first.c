@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-void print_message(void) __attribute__ ((constructor));
+void first(void) __attribute__ ((constructor));
 
 /**
- * print_message - Prints a message before the main function is executed.
+ * first - prints a sentence before the main
+ * function is executed
  */
 void first(void)
 {
